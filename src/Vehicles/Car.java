@@ -13,5 +13,7 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public void move() {}
+    public void move() {
+        System.out.println("Легковой автомобиль " + getId() + " едет по дороге со скоростью 90 км/ч");
+    }
 }

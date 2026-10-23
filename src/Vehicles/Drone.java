@@ -16,5 +16,9 @@ public class Drone extends Vehicle {
     }
 
     @Override
-    public void move() {}
+    public void move() {
+        // Уменьшаем заряд на 5% при каждом вызове (но не ниже 0)
+        batteryLevel = Math.max(0, batteryLevel - 5);
+        System.out.println("Дрон " + getId() + " летит по воздуху, заряд батареи: " + batteryLevel + "%");
+    }
 }
